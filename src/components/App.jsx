@@ -1,3 +1,5 @@
+import { CardListItem } from './CardListItem/CardListItem';
+
 export const App = () => {
   return (
     <div
@@ -6,11 +8,9 @@ export const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
       }}
     >
-      Tweets
+      <CardListItem />
     </div>
   );
 };
