@@ -1,11 +1,11 @@
-import { useSelector } from 'react-redux';
-import { selectVisibleUsers } from 'redux/selectors';
+// import { useSelector } from 'react-redux';
+// import { selectVisibleUsers } from 'redux/selectors';
 
 import { UsersListItem } from 'components/UsersListItem/UsersListItem';
 import { CardsList } from './UsersList.styled';
 
-export const UsersList = () => {
-  const users = useSelector(selectVisibleUsers);
+export const UsersList = ({ users }) => {
+  // const users = useSelector(selectVisibleUsers);
 
   return (
     <CardsList>

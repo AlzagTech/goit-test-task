@@ -5,11 +5,10 @@ export const Box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+
   font-size: 40px;
   color: #010101;
-
-  display: flex;
-  flex-direction: column;
 
   p {
     margin-bottom: 24px;

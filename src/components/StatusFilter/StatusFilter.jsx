@@ -7,11 +7,14 @@ import { setStatusFilter } from 'redux/filtersSlice';
 import { Button } from 'components/Button/Button';
 import { FiltersBox } from './StatusFilter.styled';
 
-export const StatusFilter = () => {
+export const StatusFilter = ({ onClick }) => {
   const dispatch = useDispatch();
   const filter = useSelector(selectStatusFilter);
 
-  const handleFilterChange = filter => dispatch(setStatusFilter(filter));
+  const handleFilterChange = filter => {
+    dispatch(setStatusFilter(filter));
+    onClick();
+  };
 
   return (
     <FiltersBox>

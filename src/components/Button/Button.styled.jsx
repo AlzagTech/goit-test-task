@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const BtnBox = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 48px;
+`;
+
 export const Btn = styled.button`
   padding: 14px 28px;
 
