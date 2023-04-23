@@ -39,8 +39,8 @@ export const Tweets = () => {
   useEffect(() => {
     setTotalPages(Math.ceil(users.length / tweetsPerPage));
 
-    setVisibleData([...users.slice(0, tweetsPerPage)]);
-  }, [users]);
+    setVisibleData([...users.slice(0, tweetsPerPage * page)]);
+  }, [users, page]);
 
   const selectUsers = page => {
     let selectedUsers = [];
@@ -51,7 +51,6 @@ export const Tweets = () => {
       i++
     ) {
       selectedUsers.push(users[i]);
-      console.log(i);
     }
 
     return selectedUsers;
@@ -60,7 +59,6 @@ export const Tweets = () => {
   const handleLoadMore = () => {
     const nextPage = page + 1;
     setPage(nextPage);
-
     setVisibleData(prevData => [...prevData, ...selectUsers(nextPage)]);
   };
 
