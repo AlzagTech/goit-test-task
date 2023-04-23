@@ -17,8 +17,6 @@ export const UsersListItem = ({ user }) => {
 
   const handleIsFollowed = () => dispatch(toggleIsFollowed(user.id));
 
-  // const tweetsNormalize = () => {};
-
   return (
     <UserBox>
       <UserImgBox>
