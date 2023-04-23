@@ -1,16 +1,13 @@
-import { CardListItem } from './CardListItem/CardListItem';
+import { Route, Routes } from 'react-router-dom';
+
+import { Home } from '../pages/Home';
+import { Tweets } from '../pages/Tweets';
 
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <CardListItem />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/tweets" element={<Tweets />} />
+    </Routes>
   );
 };

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import logo from 'images/logo.svg';
 import bg from 'images/bg.png';
 
-export const CardBox = styled.div`
+export const UserBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,7 +49,7 @@ export const CardBox = styled.div`
   }
 `;
 
-export const CardImgBox = styled.div`
+export const UserImgBox = styled.div`
   position: relative;
 
   display: flex;
@@ -108,13 +108,13 @@ export const CardImgBox = styled.div`
     object-fit: cover;
 
     border-radius: 50%;
-    box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
+    /* box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
       inset 0px -2.19582px 4.39163px #ae7be3,
-      inset 0px 4.39163px 3.29372px #fbf8ff;
+      inset 0px 4.39163px 3.29372px #fbf8ff; */
   }
 `;
 
-export const CardTextBox = styled.div`
+export const UserTextBox = styled.div`
   text-align: center;
 
   p {
@@ -132,7 +132,7 @@ export const CardTextBox = styled.div`
   }
 `;
 
-export const CardBtn = styled.button`
+export const UserBtn = styled.button`
   min-width: 196px;
   padding: 14px 0;
 
@@ -148,7 +148,9 @@ export const CardBtn = styled.button`
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10.3108px;
 
-  &:active {
+  cursor: pointer;
+
+  &.isFollowed {
     background-color: #5cd3a8;
   }
 `;
