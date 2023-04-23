@@ -27,4 +27,9 @@ export const Btn = styled.button`
   &.isSelected {
     background-color: #5cd3a8;
   }
+
+  &:hover,
+  &:focus {
+    background-color: #5cd3a8;
+  }
 `;

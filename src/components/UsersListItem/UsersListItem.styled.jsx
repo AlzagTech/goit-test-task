@@ -12,7 +12,7 @@ export const UserBox = styled.div`
 
   position: relative;
 
-  min-width: 380px;
+  width: 380px;
   padding-top: 178px;
   padding-bottom: 36px;
 
@@ -59,9 +59,6 @@ export const UserImgBox = styled.div`
   width: 80px;
   height: 80px;
 
-  /* border-radius: 50%;
-  background-color: #5736a3; */
-
   &::before {
     content: '';
     display: block;
@@ -93,14 +90,13 @@ export const UserImgBox = styled.div`
     border-radius: 50%;
 
     background-color: #ebd8ff;
-    /* border: 9px solid #ebd8ff; */
+
     box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
       inset 0px -2.19582px 4.39163px #ae7be3,
       inset 0px 4.39163px 3.29372px #fbf8ff;
   }
 
   img {
-    /* display: none; */
     z-index: 3;
 
     width: 62px;
@@ -108,9 +104,6 @@ export const UserImgBox = styled.div`
     object-fit: cover;
 
     border-radius: 50%;
-    /* box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
-      inset 0px -2.19582px 4.39163px #ae7be3,
-      inset 0px 4.39163px 3.29372px #fbf8ff; */
   }
 `;
 
@@ -151,6 +144,11 @@ export const UserBtn = styled.button`
   cursor: pointer;
 
   &.isFollowed {
+    background-color: #5cd3a8;
+  }
+
+  &:hover,
+  &:focus {
     background-color: #5cd3a8;
   }
 `;

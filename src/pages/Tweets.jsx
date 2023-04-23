@@ -13,7 +13,7 @@ import { StatusFilter } from '../components/StatusFilter/StatusFilter';
 import { Loader } from '../components/Loader/Loader';
 import { Layout } from 'components/Layout/Layout';
 import { Button } from 'components/Button/Button';
-import { TextBox } from 'components/TextBox/TextBox';
+import { MailBox } from 'components/MailBox/MailBox';
 import { BtnBox } from 'components/Button/Button.styled';
 
 export const Tweets = () => {
@@ -29,9 +29,9 @@ export const Tweets = () => {
   const [visibleData, setVisibleData] = useState([]);
 
   useEffect(() => {
-    const isSavedUsers = localStorage.getItem('persist:users');
+    const savedData = localStorage.getItem('persist:users');
 
-    if (!isSavedUsers) {
+    if (!savedData) {
       dispatch(fetchUsers());
     }
   }, [dispatch]);
@@ -72,11 +72,11 @@ export const Tweets = () => {
         <Button>&#10229; Back</Button>
       </Link>
       {isLoading && (
-        <TextBox>
+        <MailBox>
           <Loader />
-        </TextBox>
+        </MailBox>
       )}
-      {!isLoading && !error && (
+      {!isLoading && (
         <>
           <StatusFilter onClick={handleFilterClick} />
           <UsersList users={visibleData} />
@@ -88,9 +88,9 @@ export const Tweets = () => {
         </>
       )}
       {error && (
-        <TextBox>
+        <MailBox>
           <p>Something went wrong... </p>
-        </TextBox>
+        </MailBox>
       )}
     </Layout>
   );

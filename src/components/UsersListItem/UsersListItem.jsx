@@ -26,7 +26,7 @@ export const UsersListItem = ({ user }) => {
       </UserImgBox>
       <UserTextBox>
         <p>{tweets} Tweets</p>
-        <p>{followers} Followers</p>
+        <p>{followers.toLocaleString()} Followers</p>
       </UserTextBox>
       <UserBtn
         type="button"
