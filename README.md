@@ -3,7 +3,7 @@
 **Мета**: створити картки твітів та додати інтерактивності при клікові на
 кнопку.
 
-![Follow and Following](https://github.com/AlzagTech/goit-test-task/blob/main/asset/image-1.jpg)
+![Follow and Following](https://github.com/AlzagTech/goit-test-task/blob/main/assets/image-1.jpg)
 
 Загальний вигляд картки у двох станах - Follow та Following
 
@@ -32,7 +32,7 @@ avatar (див скріншот нижче). Зображення аватарі
 властивості “avatar”. На одній сторінці пагінації має відображатися 3 твіти,
 решта підгружатись при натисканні Load More
 
-![Users](https://github.com/AlzagTech/goit-test-task/blob/main/asset/image-2.jpg)
+![Users](https://github.com/AlzagTech/goit-test-task/blob/main/assets/image-2.jpg)
 
 Макет:
 https://www.figma.com/file/zun1oP6NmS2Lmgbcj6e1IG/Test?node-id=0%3A1&t=VoiYTfiXggVItgVd-1
